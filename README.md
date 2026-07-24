@@ -207,7 +207,7 @@ By combining **EDA**, **predictive modeling**, and **business recommendations**,
 **Junior Data Scientist**
 
 - GitHub: https://github.com/PyInsightHub
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn: https://www.linkedin.com/in/arpan-ghosal-15a430338/
 
 ---
 
