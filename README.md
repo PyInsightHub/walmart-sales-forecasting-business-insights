@@ -1,4 +1,4 @@
-# 📊 Walmart Sales Forecasting & Business Insights
+# **📊 𝙒𝙖𝙡𝙢𝙖𝙧𝙩 𝙎𝙖𝙡𝙚𝙨 𝙁𝙤𝙧𝙚𝙘𝙖𝙨𝙩𝙞𝙣𝙜 & 𝘽𝙪𝙨𝙞𝙣𝙚𝙨𝙨 𝙄𝙣𝙨𝙞𝙜𝙝𝙩𝙨**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python">
@@ -8,207 +8,260 @@
   <img src="https://img.shields.io/badge/License-MIT-lightgrey">
 </p>
 
-## 👨‍💻 Author
 
-**Arpan Ghosal**  
-**Role:** Junior Data Scientist
 
 ---
 
-# 📖 Project Overview
+# **📖 𝙋𝙧𝙤𝙟𝙚𝙘𝙩 𝙊𝙫𝙚𝙧𝙫𝙞𝙚𝙬**
 
-Retail organizations generate massive amounts of sales data every week. Understanding historical sales patterns and accurately forecasting future demand helps businesses optimize inventory, improve supply chain efficiency, and maximize revenue.
+**𝘙𝘦𝘵𝘢𝘪𝘭 𝘰𝘳𝘨𝘢𝘯𝘪𝘻𝘢𝘵𝘪𝘰𝘯𝘴 𝘨𝘦𝘯𝘦𝘳𝘢𝘵𝘦 𝘮𝘢𝘴𝘴𝘪𝘷𝘦 𝘢𝘮𝘰𝘶𝘯𝘵𝘴 𝘰𝘧 𝘴𝘢𝘭𝘦𝘴 𝘥𝘢𝘵𝘢 𝘦𝘷𝘦𝘳𝘺 𝘸𝘦𝘦𝘬. 𝘜𝘯𝘥𝘦𝘳𝘴𝘵𝘢𝘯𝘥𝘪𝘯𝘨 𝘩𝘪𝘴𝘵𝘰𝘳𝘪𝘤𝘢𝘭 𝘴𝘢𝘭𝘦𝘴 𝘱𝘢𝘵𝘵𝘦𝘳𝘯𝘴 𝘢𝘯𝘥 𝘢𝘤𝘤𝘶𝘳𝘢𝘵𝘦𝘭𝘺 𝘧𝘰𝘳𝘦𝘤𝘢𝘴𝘵𝘪𝘯𝘨 𝘧𝘶𝘵𝘶𝘳𝘦 𝘥𝘦𝘮𝘢𝘯𝘥 𝘩𝘦𝘭𝘱𝘴 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴𝘦𝘴 𝘰𝘱𝘵𝘪𝘮𝘪𝘻𝘦 𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺, 𝘪𝘮𝘱𝘳𝘰𝘷𝘦 𝘴𝘶𝘱𝘱𝘭𝘺 𝘤𝘩𝘢𝘪𝘯 𝘦𝘧𝘧𝘪𝘤𝘪𝘦𝘯𝘤𝘺, 𝘢𝘯𝘥 𝘮𝘢𝘹𝘪𝘮𝘪𝘻𝘦 𝘳𝘦𝘷𝘦𝘯𝘶𝘦.**
 
-This project performs **Exploratory Data Analysis (EDA)** and builds a **Machine Learning model** to predict Walmart's weekly sales while identifying the major business factors influencing revenue.
-
----
-
-# 🎯 Business Problem
-
-Retail sales fluctuate due to:
-
-- Holiday seasons
-- Seasonal demand
-- Promotional events
-- Economic conditions
-- Store-specific performance
-
-Poor forecasting often results in:
-
-- Overstocking
-- Understocking
-- Increased operational costs
-- Lost sales opportunities
+**𝘛𝘩𝘪𝘴 𝘱𝘳𝘰𝘫𝘦𝘤𝘵 𝘱𝘦𝘳𝘧𝘰𝘳𝘮𝘴 **𝘌𝘹𝘱𝘭𝘰𝘳𝘢𝘵𝘰𝘳𝘺 𝘋𝘢𝘵𝘢 𝘈𝘯𝘢𝘭𝘺𝘴𝘪𝘴 (𝘌𝘋𝘈)** 𝘢𝘯𝘥 𝘣𝘶𝘪𝘭𝘥𝘴 𝘢 **𝘔𝘢𝘤𝘩𝘪𝘯𝘦 𝘓𝘦𝘢𝘳𝘯𝘪𝘯𝘨 𝘮𝘰𝘥𝘦𝘭** 𝘵𝘰 𝘱𝘳𝘦𝘥𝘪𝘤𝘵 𝘞𝘢𝘭𝘮𝘢𝘳𝘵'𝘴 𝘸𝘦𝘦𝘬𝘭𝘺 𝘴𝘢𝘭𝘦𝘴 𝘸𝘩𝘪𝘭𝘦 𝘪𝘥𝘦𝘯𝘵𝘪𝘧𝘺𝘪𝘯𝘨 𝘵𝘩𝘦 𝘮𝘢𝘫𝘰𝘳 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴 𝘧𝘢𝘤𝘵𝘰𝘳𝘴 𝘪𝘯𝘧𝘭𝘶𝘦𝘯𝘤𝘪𝘯𝘨 𝘳𝘦𝘷𝘦𝘯𝘶𝘦.**
 
 ---
 
-# 🎯 Business Objectives
+# **🎯 𝘽𝙪𝙨𝙞𝙣𝙚𝙨𝙨 𝙋𝙧𝙤𝙗𝙡𝙚𝙢**
 
-- Predict weekly sales accurately
-- Analyze historical sales trends
-- Understand seasonal demand patterns
-- Identify top-performing stores
-- Support inventory planning
-- Enable data-driven business decisions
+**𝘙𝘦𝘵𝘢𝘪𝘭 𝘴𝘢𝘭𝘦𝘴 𝘧𝘭𝘶𝘤𝘵𝘶𝘢𝘵𝘦 𝘥𝘶𝘦 𝘵𝘰:**
+
+**- 𝘏𝘰𝘭𝘪𝘥𝘢𝘺 𝘴𝘦𝘢𝘴𝘰𝘯𝘴**
+
+**- 𝘚𝘦𝘢𝘴𝘰𝘯𝘢𝘭 𝘥𝘦𝘮𝘢𝘯𝘥**
+
+**- 𝘗𝘳𝘰𝘮𝘰𝘵𝘪𝘰𝘯𝘢𝘭 𝘦𝘷𝘦𝘯𝘵𝘴**
+
+**- 𝘌𝘤𝘰𝘯𝘰𝘮𝘪𝘤 𝘤𝘰𝘯𝘥𝘪𝘵𝘪𝘰𝘯𝘴**
+
+**- 𝘚𝘵𝘰𝘳𝘦-𝘴𝘱𝘦𝘤𝘪𝘧𝘪𝘤 𝘱𝘦𝘳𝘧𝘰𝘳𝘮𝘢𝘯𝘤𝘦**
+
+**𝙋𝙤𝙤𝙧 𝙛𝙤𝙧𝙚𝙘𝙖𝙨𝙩𝙞𝙣𝙜 𝙤𝙛𝙩𝙚𝙣 𝙧𝙚𝙨𝙪𝙡𝙩𝙨 𝙞𝙣:**
+
+**- 𝘖𝘷𝘦𝘳𝘴𝘵𝘰𝘤𝘬𝘪𝘯𝘨**
+
+**- 𝘜𝘯𝘥𝘦𝘳𝘴𝘵𝘰𝘤𝘬𝘪𝘯𝘨**
+
+**- 𝘐𝘯𝘤𝘳𝘦𝘢𝘴𝘦𝘥 𝘰𝘱𝘦𝘳𝘢𝘵𝘪𝘰𝘯𝘢𝘭 𝘤𝘰𝘴𝘵𝘴**
+
+**- 𝘓𝘰𝘴𝘵 𝘴𝘢𝘭𝘦𝘴 𝘰𝘱𝘱𝘰𝘳𝘵𝘶𝘯𝘪𝘵𝘪𝘦𝘴**
 
 ---
 
-# 📂 Dataset
+# **🎯 𝘽𝙪𝙨𝙞𝙣𝙚𝙨𝙨 𝙊𝙗𝙟𝙚𝙘𝙩𝙞𝙫𝙚𝙨**
 
-The dataset contains Walmart historical sales information, including:
+**- 𝘗𝘳𝘦𝘥𝘪𝘤𝘵 𝘸𝘦𝘦𝘬𝘭𝘺 𝘴𝘢𝘭𝘦𝘴 𝘢𝘤𝘤𝘶𝘳𝘢𝘵𝘦𝘭𝘺**
 
-- Store
-- Date
-- Weekly Sales
-- Holiday Flag
-- Temperature
-- Fuel Price
-- CPI
-- Unemployment
+**- 𝘈𝘯𝘢𝘭𝘺𝘻𝘦 𝘩𝘪𝘴𝘵𝘰𝘳𝘪𝘤𝘢𝘭 𝘴𝘢𝘭𝘦𝘴 𝘵𝘳𝘦𝘯𝘥𝘴**
+
+**- 𝘜𝘯𝘥𝘦𝘳𝘴𝘵𝘢𝘯𝘥 𝘴𝘦𝘢𝘴𝘰𝘯𝘢𝘭 𝘥𝘦𝘮𝘢𝘯𝘥 𝘱𝘢𝘵𝘵𝘦𝘳𝘯𝘴**
+
+**- 𝘐𝘥𝘦𝘯𝘵𝘪𝘧𝘺 𝘵𝘰𝘱-𝘱𝘦𝘳𝘧𝘰𝘳𝘮𝘪𝘯𝘨 𝘴𝘵𝘰𝘳𝘦𝘴**
+
+**- 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺 𝘱𝘭𝘢𝘯𝘯𝘪𝘯𝘨- 𝘌𝘯𝘢𝘣𝘭𝘦 𝘥𝘢𝘵𝘢-𝘥𝘳𝘪𝘷𝘦𝘯 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴 𝘥𝘦𝘤𝘪𝘴𝘪𝘰𝘯𝘴**
 
 ---
 
-# 🛠️ Technologies Used
+# **📂 𝘿𝙖𝙩𝙖𝙨𝙚𝙩**
 
-| Category | Tools |
+**𝘛𝘩𝘦 𝘥𝘢𝘵𝘢𝘴𝘦𝘵 𝘤𝘰𝘯𝘵𝘢𝘪𝘯𝘴 𝘞𝘢𝘭𝘮𝘢𝘳𝘵 𝘩𝘪𝘴𝘵𝘰𝘳𝘪𝘤𝘢𝘭 𝘴𝘢𝘭𝘦𝘴 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯, 𝘪𝘯𝘤𝘭𝘶𝘥𝘪𝘯𝘨:**
+
+**- 𝘚𝘵𝘰𝘳𝘦**
+
+**- 𝘋𝘢𝘵𝘦**
+
+**- 𝘞𝘦𝘦𝘬𝘭𝘺 𝘚𝘢𝘭𝘦𝘴**
+
+**- 𝘏𝘰𝘭𝘪𝘥𝘢𝘺 𝘍𝘭𝘢𝘨**
+
+**- 𝘛𝘦𝘮𝘱𝘦𝘳𝘢𝘵𝘶𝘳𝘦**
+
+**- 𝘍𝘶𝘦𝘭 𝘗𝘳𝘪𝘤𝘦**
+
+**- 𝘊𝘗𝘐**
+
+**- 𝘜𝘯𝘦𝘮𝘱𝘭𝘰𝘺𝘮𝘦𝘯𝘵**
+
+---
+
+# **🛠️ 𝙏𝙚𝙘𝙝𝙣𝙤𝙡𝙤𝙜𝙞𝙚𝙨 𝙐𝙨𝙚𝙙**
+
+| **𝘊𝘢𝘵𝘦𝘨𝘰𝘳𝘺** | **𝘛𝘰𝘰𝘭𝘴** |
 |----------|-------|
-| Programming | Python |
-| Data Analysis | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn |
-| Notebook | Jupyter Notebook |
+| **𝘗𝘳𝘰𝘨𝘳𝘢𝘮𝘮𝘪𝘯𝘨** | **𝘗𝘺𝘵𝘩𝘰𝘯** |
+| **𝘋𝘢𝘵𝘢 𝘈𝘯𝘢𝘭𝘺𝘴𝘪𝘴** | **𝘗𝘢𝘯𝘥𝘢𝘴, 𝘕𝘶𝘮𝘗𝘺** |
+| **𝘝𝘪𝘴𝘶𝘢𝘭𝘪𝘻𝘢𝘵𝘪𝘰𝘯** | **𝘔𝘢𝘵𝘱𝘭𝘰𝘵𝘭𝘪𝘣, 𝘚𝘦𝘢𝘣𝘰𝘳𝘯** |
+| **𝘔𝘢𝘤𝘩𝘪𝘯𝘦 𝘓𝘦𝘢𝘳𝘯𝘪𝘯𝘨** | **𝘚𝘤𝘪𝘬𝘪𝘵-𝘭𝘦𝘢𝘳𝘯** |
+| **𝘕𝘰𝘵𝘦𝘣𝘰𝘰𝘬** | **𝘑𝘶𝘱𝘺𝘵𝘦𝘳 𝘕𝘰𝘵𝘦𝘣𝘰𝘰𝘬** |
 
 ---
 
-# 📊 Exploratory Data Analysis (EDA)
+# **📊 𝙀𝙭𝙥𝙡𝙤𝙧𝙖𝙩𝙤𝙧𝙮 𝘿𝙖𝙩𝙖 𝘼𝙣𝙖𝙡𝙮𝙨𝙞𝙨 (𝙀𝘿𝘼)**
 
-The analysis includes:
+**𝘛𝘩𝘦 𝘢𝘯𝘢𝘭𝘺𝘴𝘪𝘴 𝘪𝘯𝘤𝘭𝘶𝘥𝘦𝘴:**
 
-- Data Cleaning
-- Missing Value Check
-- Duplicate Detection
-- Statistical Summary
-- Sales Distribution
-- Holiday Sales Analysis
-- Store-wise Sales Comparison
-- Correlation Analysis
-- Feature Relationship Analysis
-- Outlier Detection
+**- 𝘋𝘢𝘵𝘢 𝘊𝘭𝘦𝘢𝘯𝘪𝘯𝘨**
 
----
+**- 𝘔𝘪𝘴𝘴𝘪𝘯𝘨 𝘝𝘢𝘭𝘶𝘦 𝘊𝘩𝘦𝘤𝘬**
 
-# 📈 Key Business Insights
+**- 𝘋𝘶𝘱𝘭𝘪𝘤𝘢𝘵𝘦 𝘋𝘦𝘵𝘦𝘤𝘵𝘪𝘰𝘯**
 
-- 📌 Weekly sales increase significantly during holiday periods.
-- 📌 A small number of stores consistently outperform others.
-- 📌 Seasonal demand is the strongest driver of sales.
-- 📌 Economic indicators such as CPI and Fuel Price have comparatively lower influence.
-- 📌 Historical sales trends provide valuable forecasting signals.
+**- 𝘚𝘵𝘢𝘵𝘪𝘴𝘵𝘪𝘤𝘢𝘭 𝘚𝘶𝘮𝘮𝘢𝘳𝘺**
 
----
+**- 𝘚𝘢𝘭𝘦𝘴 𝘋𝘪𝘴𝘵𝘳𝘪𝘣𝘶𝘵𝘪𝘰𝘯**
 
-# 🤖 Machine Learning
+**- 𝘏𝘰𝘭𝘪𝘥𝘢𝘺 𝘚𝘢𝘭𝘦𝘴 𝘈𝘯𝘢𝘭𝘺𝘴𝘪𝘴**
 
-## Model Development
+**- 𝘚𝘵𝘰𝘳𝘦-𝘸𝘪𝘴𝘦 𝘚𝘢𝘭𝘦𝘴 𝘊𝘰𝘮𝘱𝘢𝘳𝘪𝘴𝘰𝘯**
 
-The project includes supervised machine learning models for sales prediction.
+**- 𝘊𝘰𝘳𝘳𝘦𝘭𝘢𝘵𝘪𝘰𝘯 𝘈𝘯𝘢𝘭𝘺𝘴𝘪𝘴**
 
-Typical workflow:
+**- 𝘍𝘦𝘢𝘵𝘶𝘳𝘦 𝘙𝘦𝘭𝘢𝘵𝘪𝘰𝘯𝘴𝘩𝘪𝘱 𝘈𝘯𝘢𝘭𝘺𝘴𝘪𝘴**
 
-1. Data Preprocessing
-2. Feature Engineering
-3. Train-Test Split
-4. Model Training
-5. Model Evaluation
-6. Prediction
-
-Possible algorithms include:
-
-- Linear Regression
-- Random Forest Regressor
-- Decision Tree Regressor
+**- 𝘖𝘶𝘵𝘭𝘪𝘦𝘳 𝘋𝘦𝘵𝘦𝘤𝘵𝘪𝘰𝘯**
 
 ---
 
-# 📊 Model Evaluation
+# **📈 𝙆𝙚𝙮 𝘽𝙪𝙨𝙞𝙣𝙚𝙨𝙨 𝙄𝙣𝙨𝙞𝙜𝙝𝙩𝙨**
 
-Performance was evaluated using:
+**- 📌 𝘞𝘦𝘦𝘬𝘭𝘺 𝘴𝘢𝘭𝘦𝘴 𝘪𝘯𝘤𝘳𝘦𝘢𝘴𝘦 𝘴𝘪𝘨𝘯𝘪𝘧𝘪𝘤𝘢𝘯𝘵𝘭𝘺 𝘥𝘶𝘳𝘪𝘯𝘨 𝘩𝘰𝘭𝘪𝘥𝘢𝘺 𝘱𝘦𝘳𝘪𝘰𝘥𝘴.**
 
-- RMSE (Root Mean Squared Error)
-- R² Score
+**- 📌 𝘈 𝘴𝘮𝘢𝘭𝘭 𝘯𝘶𝘮𝘣𝘦𝘳 𝘰𝘧 𝘴𝘵𝘰𝘳𝘦𝘴 𝘤𝘰𝘯𝘴𝘪𝘴𝘵𝘦𝘯𝘵𝘭𝘺 𝘰𝘶𝘵𝘱𝘦𝘳𝘧𝘰𝘳𝘮 𝘰𝘵𝘩𝘦𝘳𝘴.**
 
-These metrics help measure prediction accuracy and model reliability.
+**- 📌 𝘚𝘦𝘢𝘴𝘰𝘯𝘢𝘭 𝘥𝘦𝘮𝘢𝘯𝘥 𝘪𝘴 𝘵𝘩𝘦 𝘴𝘵𝘳𝘰𝘯𝘨𝘦𝘴𝘵 𝘥𝘳𝘪𝘷𝘦𝘳 𝘰𝘧 𝘴𝘢𝘭𝘦𝘴.**
 
----
+**- 📌 𝘌𝘤𝘰𝘯𝘰𝘮𝘪𝘤 𝘪𝘯𝘥𝘪𝘤𝘢𝘵𝘰𝘳𝘴 𝘴𝘶𝘤𝘩 𝘢𝘴 𝘊𝘗𝘐 𝘢𝘯𝘥 𝘍𝘶𝘦𝘭 𝘗𝘳𝘪𝘤𝘦 𝘩𝘢𝘷𝘦 𝘤𝘰𝘮𝘱𝘢𝘳𝘢𝘵𝘪𝘷𝘦𝘭𝘺 𝘭𝘰𝘸𝘦𝘳 𝘪𝘯𝘧𝘭𝘶𝘦𝘯𝘤𝘦.**
 
-# 💼 Business Impact
-
-The forecasting model helps businesses:
-
-- Improve demand forecasting
-- Reduce inventory shortages
-- Minimize excess stock
-- Optimize supply chain planning
-- Support pricing strategies
-- Improve promotional planning
+**- 📌 𝘏𝘪𝘴𝘵𝘰𝘳𝘪𝘤𝘢𝘭 𝘴𝘢𝘭𝘦𝘴 𝘵𝘳𝘦𝘯𝘥𝘴 𝘱𝘳𝘰𝘷𝘪𝘥𝘦 𝘷𝘢𝘭𝘶𝘢𝘣𝘭𝘦 𝘧𝘰𝘳𝘦𝘤𝘢𝘴𝘵𝘪𝘯𝘨 𝘴𝘪𝘨𝘯𝘢𝘭𝘴.**
 
 ---
 
-# 📌 Recommendations
+# **🤖 𝙈𝙖𝙘𝙝𝙞𝙣𝙚 𝙇𝙚𝙖𝙧𝙣𝙞𝙣𝙜**
 
-- Increase inventory before major holidays.
-- Focus marketing efforts on high-performing stores.
-- Monitor seasonal sales patterns continuously.
-- Integrate forecasting into inventory management systems.
-- Retrain the model periodically using updated sales data.
+## **𝘔𝘰𝘥𝘦𝘭 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘮𝘦𝘯𝘵**
 
----
+**𝘛𝘩𝘦 𝘱𝘳𝘰𝘫𝘦𝘤𝘵 𝘪𝘯𝘤𝘭𝘶𝘥𝘦𝘴 𝘴𝘶𝘱𝘦𝘳𝘷𝘪𝘴𝘦𝘥 𝘮𝘢𝘤𝘩𝘪𝘯𝘦 𝘭𝘦𝘢𝘳𝘯𝘪𝘯𝘨 𝘮𝘰𝘥𝘦𝘭𝘴 𝘧𝘰𝘳 𝘴𝘢𝘭𝘦𝘴 𝘱𝘳𝘦𝘥𝘪𝘤𝘵𝘪𝘰𝘯.**
 
-# 🚀 Future Improvements
+**𝘛𝘺𝘱𝘪𝘤𝘢𝘭 𝘸𝘰𝘳𝘬𝘧𝘭𝘰𝘸:**
 
-Future enhancements may include:
+**1. 𝘋𝘢𝘵𝘢 𝘗𝘳𝘦𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨**
+**2. 𝘍𝘦𝘢𝘵𝘶𝘳𝘦 𝘌𝘯𝘨𝘪𝘯𝘦𝘦𝘳𝘪𝘯𝘨**
+**3. 𝘛𝘳𝘢𝘪𝘯-𝘛𝘦𝘴𝘵 𝘚𝘱𝘭𝘪𝘵**
+**4. 𝘔𝘰𝘥𝘦𝘭 𝘛𝘳𝘢𝘪𝘯𝘪𝘯𝘨**
+**5. 𝘔𝘰𝘥𝘦𝘭 𝘌𝘷𝘢𝘭𝘶𝘢𝘵𝘪𝘰𝘯**
+**6. 𝘗𝘳𝘦𝘥𝘪𝘤𝘵𝘪𝘰𝘯**
 
-- XGBoost Regressor
-- LightGBM
-- CatBoost
-- LSTM Time-Series Forecasting
-- Hyperparameter Tuning
-- Feature Engineering
-- Streamlit Dashboard Deployment
-- Flask API Integration
-- Docker Containerization
-- Cloud Deployment (AWS/Azure/GCP)
+**𝘗𝘰𝘴𝘴𝘪𝘣𝘭𝘦 𝘢𝘭𝘨𝘰𝘳𝘪𝘵𝘩𝘮𝘴 𝘪𝘯𝘤𝘭𝘶𝘥𝘦:**
+
+**- 𝘓𝘪𝘯𝘦𝘢𝘳 𝘙𝘦𝘨𝘳𝘦𝘴𝘴𝘪𝘰𝘯**
+
+**- 𝘙𝘢𝘯𝘥𝘰𝘮 𝘍𝘰𝘳𝘦𝘴𝘵 𝘙𝘦𝘨𝘳𝘦𝘴𝘴𝘰𝘳**
+
+**- 𝘋𝘦𝘤𝘪𝘴𝘪𝘰𝘯 𝘛𝘳𝘦𝘦 𝘙𝘦𝘨𝘳𝘦𝘴𝘴𝘰𝘳**
 
 ---
 
+# **📊 𝙈𝙤𝙙𝙚𝙡 𝙀𝙫𝙖𝙡𝙪𝙖𝙩𝙞𝙤𝙣**
 
-# 📷 Sample Visualizations
+**𝘗𝘦𝘳𝘧𝘰𝘳𝘮𝘢𝘯𝘤𝘦 𝘸𝘢𝘴 𝘦𝘷𝘢𝘭𝘶𝘢𝘵𝘦𝘥 𝘶𝘴𝘪𝘯𝘨:**
 
-- Sales Distribution
-- Holiday vs Non-Holiday Sales
-- Correlation Heatmap
-- Store-wise Sales Analysis
-- Feature Importance
-- Prediction vs Actual Sales
+**- 𝘙𝘔𝘚𝘌 (𝘙𝘰𝘰𝘵 𝘔𝘦𝘢𝘯 𝘚𝘲𝘶𝘢𝘳𝘦𝘥 𝘌𝘳𝘳𝘰𝘳)**
 
----
+**- 𝘙² 𝘚𝘤𝘰𝘳𝘦**
 
-# 🎯 Conclusion
-
-This project demonstrates how **Data Analytics** and **Machine Learning** can transform historical retail sales data into actionable business insights.
-
-By combining **EDA**, **predictive modeling**, and **business recommendations**, organizations can make informed decisions that improve operational efficiency and profitability.
+**𝘛𝘩𝘦𝘴𝘦 𝘮𝘦𝘵𝘳𝘪𝘤𝘴 𝘩𝘦𝘭𝘱 𝘮𝘦𝘢𝘴𝘶𝘳𝘦 𝘱𝘳𝘦𝘥𝘪𝘤𝘵𝘪𝘰𝘯 𝘢𝘤𝘤𝘶𝘳𝘢𝘤𝘺 𝘢𝘯𝘥 𝘮𝘰𝘥𝘦𝘭 𝘳𝘦𝘭𝘪𝘢𝘣𝘪𝘭𝘪𝘵𝘺.**
 
 ---
 
-## ⭐ Connect With Me
+# **💼 𝘽𝙪𝙨𝙞𝙣𝙚𝙨𝙨 𝙄𝙢𝙥𝙖𝙘𝙩**
 
-**Arpan Ghosal**  
-**Junior Data Scientist**
+**𝘛𝘩𝘦 𝘧𝘰𝘳𝘦𝘤𝘢𝘴𝘵𝘪𝘯𝘨 𝘮𝘰𝘥𝘦𝘭 𝘩𝘦𝘭𝘱𝘴 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴𝘦𝘴:**
 
-- GitHub: https://github.com/PyInsightHub
-- LinkedIn: https://www.linkedin.com/in/arpan-ghosal-15a430338/
+**- 𝘐𝘮𝘱𝘳𝘰𝘷𝘦 𝘥𝘦𝘮𝘢𝘯𝘥 𝘧𝘰𝘳𝘦𝘤𝘢𝘴𝘵𝘪𝘯𝘨**
+
+**- 𝘙𝘦𝘥𝘶𝘤𝘦 𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺 𝘴𝘩𝘰𝘳𝘵𝘢𝘨𝘦𝘴**
+
+**- 𝘔𝘪𝘯𝘪𝘮𝘪𝘻𝘦 𝘦𝘹𝘤𝘦𝘴𝘴 𝘴𝘵𝘰𝘤𝘬**
+
+**- 𝘖𝘱𝘵𝘪𝘮𝘪𝘻𝘦 𝘴𝘶𝘱𝘱𝘭𝘺 𝘤𝘩𝘢𝘪𝘯 𝘱𝘭𝘢𝘯𝘯𝘪𝘯𝘨**
+
+**- 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘱𝘳𝘪𝘤𝘪𝘯𝘨 𝘴𝘵𝘳𝘢𝘵𝘦𝘨𝘪𝘦𝘴**
+
+**- 𝘐𝘮𝘱𝘳𝘰𝘷𝘦 𝘱𝘳𝘰𝘮𝘰𝘵𝘪𝘰𝘯𝘢𝘭 𝘱𝘭𝘢𝘯𝘯𝘪𝘯𝘨**
 
 ---
 
-## ⭐ If you found this project helpful, please consider giving it a Star!
+# **📌 𝙍𝙚𝙘𝙤𝙢𝙢𝙚𝙣𝙙𝙖𝙩𝙞𝙤𝙣𝙨**
+
+**- 𝘐𝘯𝘤𝘳𝘦𝘢𝘴𝘦 𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺 𝘣𝘦𝘧𝘰𝘳𝘦 𝘮𝘢𝘫𝘰𝘳 𝘩𝘰𝘭𝘪𝘥𝘢𝘺𝘴.**
+
+**- 𝘍𝘰𝘤𝘶𝘴 𝘮𝘢𝘳𝘬𝘦𝘵𝘪𝘯𝘨 𝘦𝘧𝘧𝘰𝘳𝘵𝘴 𝘰𝘯 𝘩𝘪𝘨𝘩-𝘱𝘦𝘳𝘧𝘰𝘳𝘮𝘪𝘯𝘨 𝘴𝘵𝘰𝘳𝘦𝘴.**
+
+**- 𝘔𝘰𝘯𝘪𝘵𝘰𝘳 𝘴𝘦𝘢𝘴𝘰𝘯𝘢𝘭 𝘴𝘢𝘭𝘦𝘴 𝘱𝘢𝘵𝘵𝘦𝘳𝘯𝘴 𝘤𝘰𝘯𝘵𝘪𝘯𝘶𝘰𝘶𝘴𝘭𝘺.**
+
+**- 𝘐𝘯𝘵𝘦𝘨𝘳𝘢𝘵𝘦 𝘧𝘰𝘳𝘦𝘤𝘢𝘴𝘵𝘪𝘯𝘨 𝘪𝘯𝘵𝘰 𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵 𝘴𝘺𝘴𝘵𝘦𝘮𝘴.**
+
+**- 𝘙𝘦𝘵𝘳𝘢𝘪𝘯 𝘵𝘩𝘦 𝘮𝘰𝘥𝘦𝘭 𝘱𝘦𝘳𝘪𝘰𝘥𝘪𝘤𝘢𝘭𝘭𝘺 𝘶𝘴𝘪𝘯𝘨 𝘶𝘱𝘥𝘢𝘵𝘦𝘥 𝘴𝘢𝘭𝘦𝘴 𝘥𝘢𝘵𝘢.**
+
+---
+
+# **🚀 𝙁𝙪𝙩𝙪𝙧𝙚 𝙄𝙢𝙥𝙧𝙤𝙫𝙚𝙢𝙚𝙣𝙩𝙨**
+
+**𝘍𝘶𝘵𝘶𝘳𝘦 𝘦𝘯𝘩𝘢𝘯𝘤𝘦𝘮𝘦𝘯𝘵𝘴 𝘮𝘢𝘺 𝘪𝘯𝘤𝘭𝘶𝘥𝘦:**
+
+**- 𝘟𝘎𝘉𝘰𝘰𝘴𝘵 𝘙𝘦𝘨𝘳𝘦𝘴𝘴𝘰𝘳**
+
+**- 𝘓𝘪𝘨𝘩𝘵𝘎𝘉𝘔- 𝘊𝘢𝘵𝘉𝘰𝘰𝘴𝘵**
+
+**- 𝘓𝘚𝘛𝘔 𝘛𝘪𝘮𝘦-𝘚𝘦𝘳𝘪𝘦𝘴 𝘍𝘰𝘳𝘦𝘤𝘢𝘴𝘵𝘪𝘯𝘨**
+
+**- 𝘏𝘺𝘱𝘦𝘳𝘱𝘢𝘳𝘢𝘮𝘦𝘵𝘦𝘳 𝘛𝘶𝘯𝘪𝘯𝘨**
+
+**- 𝘍𝘦𝘢𝘵𝘶𝘳𝘦 𝘌𝘯𝘨𝘪𝘯𝘦𝘦𝘳𝘪𝘯𝘨**
+
+**- 𝘚𝘵𝘳𝘦𝘢𝘮𝘭𝘪𝘵 𝘋𝘢𝘴𝘩𝘣𝘰𝘢𝘳𝘥 𝘋𝘦𝘱𝘭𝘰𝘺𝘮𝘦𝘯𝘵**
+
+**- 𝘍𝘭𝘢𝘴𝘬 𝘈𝘗𝘐 𝘐𝘯𝘵𝘦𝘨𝘳𝘢𝘵𝘪𝘰𝘯**
+
+**- 𝘋𝘰𝘤𝘬𝘦𝘳 𝘊𝘰𝘯𝘵𝘢𝘪𝘯𝘦𝘳𝘪𝘻𝘢𝘵𝘪𝘰𝘯**
+
+**- 𝘊𝘭𝘰𝘶𝘥 𝘋𝘦𝘱𝘭𝘰𝘺𝘮𝘦𝘯𝘵 (𝘈𝘞𝘚/𝘈𝘻𝘶𝘳𝘦/𝘎𝘊𝘗)**
+
+---
+
+
+# **📷 𝙎𝙖𝙢𝙥𝙡𝙚 𝙑𝙞𝙨𝙪𝙖𝙡𝙞𝙯𝙖𝙩𝙞𝙤𝙣𝙨**
+
+**- 𝘚𝘢𝘭𝘦𝘴 𝘋𝘪𝘴𝘵𝘳𝘪𝘣𝘶𝘵𝘪𝘰𝘯**
+
+**- 𝘏𝘰𝘭𝘪𝘥𝘢𝘺 𝘷𝘴 𝘕𝘰𝘯-𝘏𝘰𝘭𝘪𝘥𝘢𝘺 𝘚𝘢𝘭𝘦𝘴**
+
+**- 𝘊𝘰𝘳𝘳𝘦𝘭𝘢𝘵𝘪𝘰𝘯 𝘏𝘦𝘢𝘵𝘮𝘢𝘱**
+
+**- 𝘚𝘵𝘰𝘳𝘦-𝘸𝘪𝘴𝘦 𝘚𝘢𝘭𝘦𝘴 𝘈𝘯𝘢𝘭𝘺𝘴𝘪𝘴**
+
+**- 𝘍𝘦𝘢𝘵𝘶𝘳𝘦 𝘐𝘮𝘱𝘰𝘳𝘵𝘢𝘯𝘤𝘦**
+
+**- 𝘗𝘳𝘦𝘥𝘪𝘤𝘵𝘪𝘰𝘯 𝘷𝘴 𝘈𝘤𝘵𝘶𝘢𝘭 𝘚𝘢𝘭𝘦𝘴**
+
+---
+
+# **🎯 𝘾𝙤𝙣𝙘𝙡𝙪𝙨𝙞𝙤𝙣**
+
+**𝘛𝘩𝘪𝘴 𝘱𝘳𝘰𝘫𝘦𝘤𝘵 𝘥𝘦𝘮𝘰𝘯𝘴𝘵𝘳𝘢𝘵𝘦𝘴 𝘩𝘰𝘸 **𝘋𝘢𝘵𝘢 𝘈𝘯𝘢𝘭𝘺𝘵𝘪𝘤𝘴** 𝘢𝘯𝘥 **𝘔𝘢𝘤𝘩𝘪𝘯𝘦 𝘓𝘦𝘢𝘳𝘯𝘪𝘯𝘨** 𝘤𝘢𝘯 𝘵𝘳𝘢𝘯𝘴𝘧𝘰𝘳𝘮 𝘩𝘪𝘴𝘵𝘰𝘳𝘪𝘤𝘢𝘭 𝘳𝘦𝘵𝘢𝘪𝘭 𝘴𝘢𝘭𝘦𝘴 𝘥𝘢𝘵𝘢 𝘪𝘯𝘵𝘰 𝘢𝘤𝘵𝘪𝘰𝘯𝘢𝘣𝘭𝘦 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴 𝘪𝘯𝘴𝘪𝘨𝘩𝘵𝘴.**
+
+**𝘉𝘺 𝘤𝘰𝘮𝘣𝘪𝘯𝘪𝘯𝘨 **𝘌𝘋𝘈**, **𝘱𝘳𝘦𝘥𝘪𝘤𝘵𝘪𝘷𝘦 𝘮𝘰𝘥𝘦𝘭𝘪𝘯𝘨**, 𝘢𝘯𝘥 **𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴 𝘳𝘦𝘤𝘰𝘮𝘮𝘦𝘯𝘥𝘢𝘵𝘪𝘰𝘯𝘴**, 𝘰𝘳𝘨𝘢𝘯𝘪𝘻𝘢𝘵𝘪𝘰𝘯𝘴 𝘤𝘢𝘯 𝘮𝘢𝘬𝘦 𝘪𝘯𝘧𝘰𝘳𝘮𝘦𝘥 𝘥𝘦𝘤𝘪𝘴𝘪𝘰𝘯𝘴 𝘵𝘩𝘢𝘵 𝘪𝘮𝘱𝘳𝘰𝘷𝘦 𝘰𝘱𝘦𝘳𝘢𝘵𝘪𝘰𝘯𝘢𝘭 𝘦𝘧𝘧𝘪𝘤𝘪𝘦𝘯𝘤𝘺 𝘢𝘯𝘥 𝘱𝘳𝘰𝘧𝘪𝘵𝘢𝘣𝘪𝘭𝘪𝘵𝘺.**
+
+---
+
+
+## **👨‍💻 𝐀𝐮𝐭𝐡𝐨𝐫**
+
+**𝘼𝙧𝙥𝙖𝙣 𝙂𝙝𝙤𝙨𝙖𝙡**  
+**𝙍𝙤𝙡𝙚:** **𝙅𝙪𝙣𝙞𝙤𝙧 𝘿𝙖𝙩𝙖 𝙎𝙘𝙞𝙚𝙣𝙩𝙞𝙨𝙩**
+
+**- 𝙂𝙞𝙩𝙃𝙪𝙗:** https://github.com/PyInsightHub
+
+**- 𝙇𝙞𝙣𝙠𝙚𝙙𝙄𝙣:** https://www.linkedin.com/in/arpan-ghosal-15a430338/
+
+---
+
+## **⭐ 𝙄𝙛 𝙮𝙤𝙪 𝙛𝙤𝙪𝙣𝙙 𝙩𝙝𝙞𝙨 𝙥𝙧𝙤𝙟𝙚𝙘𝙩 𝙝𝙚𝙡𝙥𝙛𝙪𝙡, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙘𝙤𝙣𝙨𝙞𝙙𝙚𝙧 𝙜𝙞𝙫𝙞𝙣𝙜 𝙞𝙩 𝙖 𝙎𝙩𝙖𝙧!**
