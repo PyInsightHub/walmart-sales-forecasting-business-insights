@@ -8,12 +8,11 @@
   <img src="https://img.shields.io/badge/License-MIT-lightgrey">
 </p>
 
-
+![image alt](https://github.com/PyInsightHub/walmart-sales-forecasting-business-insights/blob/37e4b833749cef046880fbdb112b5d518f988b69/walmart-sales-forecasting-business-insights/ChatGPT%20Image%20Jul%2024%2C%202026.png)
 
 
 ---
 
-![image alt](https://github.com/PyInsightHub/walmart-sales-forecasting-business-insights/blob/37e4b833749cef046880fbdb112b5d518f988b69/walmart-sales-forecasting-business-insights/ChatGPT%20Image%20Jul%2024%2C%202026.png)
 
 # **📖 𝙋𝙧𝙤𝙟𝙚𝙘𝙩 𝙊𝙫𝙚𝙧𝙫𝙞𝙚𝙬**
 
